@@ -44,8 +44,12 @@ header{
   height: 100vh;
   margin: 0 auto 0 auto;
   position: relative;
-  background: url('assets/couple_main_edited.jpg') no-repeat 70% center/cover;
-  border: 1px solid #200a00;
+  /*background: url('assets/couple_main_edited.jpg') no-repeat 70% center/cover;*/
+  background: url('assets/couple_main_edited.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+   border: 1px solid #200a00;
 }
 .names {
   width: 100%;
@@ -452,12 +456,18 @@ footer h3{
 
 	}
 
-
-
-	
 }
 
 @media only screen and ( min-width: 1300px){
+	header{
+	  background: url('assets/couple_main_edited.jpg');
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-position: center 20%;
+	}	
+	.names {
+	  bottom: 60px;
+	}	
 	.dinner{
 	  width: 30vw;
 	}
